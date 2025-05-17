@@ -202,4 +202,4 @@ MIT
 ## Presentation slides
 Tuni signup to office required.
 
-[Presentation]https://tuni-my.sharepoint.com/:p:/g/personal/roope_kallinen_tuni_fi/Eb-kezo_Fd9KraQXUu9DcSMBoUIIoqG8K2qwyntM8HgiuQ?e=PVm7zu
+[Presentation](https://tuni-my.sharepoint.com/:p:/g/personal/roope_kallinen_tuni_fi/Eb-kezo_Fd9KraQXUu9DcSMBoUIIoqG8K2qwyntM8HgiuQ?e=PVm7zu)
