@@ -6,16 +6,16 @@ const twilio = require('twilio');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const validator = require('validator');
+const fs = require('fs');
+const https = require('https');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-const corsOptions = {
-  origin: 'http://localhost:5173', // Restrict to frontend origin
-  methods: ['POST'],
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: 'https://localhost:5173',
+  credentials: true
+}));
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -71,9 +71,21 @@ app.post('/api/check-verification', async (req, res) => {
 });
 
 if (require.main === module) {
-  app.listen(port, () => {
-    console.log(`2FA backend running on port ${port}`);
-  });
+  const certPath = './cert.pem';
+  const keyPath = './key.pem';
+  if (fs.existsSync(certPath) && fs.existsSync(keyPath)) {
+    const options = {
+      key: fs.readFileSync(keyPath),
+      cert: fs.readFileSync(certPath),
+    };
+    https.createServer(options, app).listen(port, () => {
+      console.log(`2FA backend running with HTTPS on port ${port}`);
+    });
+  } else {
+    app.listen(port, () => {
+      console.log(`2FA backend running on HTTP (no certs found) on port ${port}`);
+    });
+  }
 }
 
 module.exports = app;

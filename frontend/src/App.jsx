@@ -60,7 +60,7 @@ function App() {
     }
     try {
       // Send phone number to backend to start verification
-      const res = await fetch('http://localhost:3000/api/start-verification', {
+      const res = await fetch('https://localhost:3000/api/start-verification', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ phone: sanitizedPhone })
@@ -100,7 +100,7 @@ function App() {
     }
     try {
       // Send phone and code to backend to check verification
-      const res = await fetch('http://localhost:3000/api/check-verification', {
+      const res = await fetch('https://localhost:3000/api/check-verification', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ phone: sanitizedPhone, code: sanitizedCode })
@@ -149,7 +149,7 @@ function App() {
           <form onSubmit={handleVerify}>
             <input
               type="tel"
-              placeholder="Enter phone number"
+              placeholder="Enter your phone number"
               value={phone}
               onChange={e => setPhone(e.target.value)}
               className="phone-input"

@@ -161,18 +161,17 @@
 }
 .lock-shackle.unlocked {
   transform: translateY(-7px);
-  opacity: 0.7;
 }
 
 .lock-shackle-cover {
   position: absolute;
   left: 8px;
   top: 18px;
-  width: 7px; /* Adjust width as needed to cover the left side */
-  height: 55px; /* Should be at least as tall as the shackle */
-  background: #808080; /* Match your .card background */
+  width: 7px;
+  height: 55px; 
+  background: #808080; 
   z-index: 2;
-  border-radius: 16px 0 0 0; /* Optional: soften the top left corner */
+  border-radius: 16px 0 0 0;
 }
 
 .progressbar-wrapper {
