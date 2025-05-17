@@ -192,7 +192,8 @@ When running this app locally with self-signed HTTPS certificates (`key.pem`, `c
 ## License
 MIT
 
----
+Check LICENSE file for more information
+
 
 ## Credits
 
