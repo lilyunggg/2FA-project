@@ -57,7 +57,6 @@ For more details, see [Twilio’s Verify Quickstart](https://www.twilio.com/docs
    openssl version
    ```
 
----
 
 ## Setup
 
@@ -102,7 +101,6 @@ openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -days 36
 
 Place `key.pem` and `cert.pem` in the project root.
 
----
 
 ## Running the App
 
@@ -126,7 +124,6 @@ npm run dev
 
 The frontend will run on [https://localhost:5173](https://localhost:5173).
 
----
 
 ## Usage
 
@@ -134,7 +131,6 @@ The frontend will run on [https://localhost:5173](https://localhost:5173).
 2. Enter the verification code you receive via SMS.
 3. If successful, the lock icon will animate to "unlocked".
 
----
 
 ## Testing
 
@@ -144,7 +140,6 @@ Backend tests use Vitest and Supertest.
 npm test
 ```
 
----
 
 ## Secure programming principles
 
@@ -174,7 +169,6 @@ This app includes several security features and best practices:
 **Important:**  
 Add `.env`, `key.pem`, and `cert.pem` to your `.gitignore` file to ensure they are not included in your repository.
 
----
 
 ## ⚠️ HTTPS & Browser Security Warning
 
@@ -194,7 +188,6 @@ When running this app locally with self-signed HTTPS certificates (`key.pem`, `c
 - **Do not use self-signed certificates in production.**  
   For public deployments, always use certificates from a trusted CA to ensure user security and avoid browser warnings.
 
----
 
 ## License
 MIT
@@ -218,3 +211,6 @@ MIT
 Tuni signup to office required.
 
 [Presentation](https://tuni-my.sharepoint.com/:p:/g/personal/roope_kallinen_tuni_fi/Eb-kezo_Fd9KraQXUu9DcSMBoUIIoqG8K2qwyntM8HgiuQ?e=PVm7zu)
+
+## Usage of AI
+AI was used extensively to create this project. It was used to plan, document and to implement the code throughout the project.
