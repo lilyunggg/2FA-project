@@ -99,7 +99,7 @@ From the project root:
 npm start
 ```
 
-The backend will run on [http://localhost:3000](http://localhost:3000).
+The backend will run on [https://localhost:3000](https://localhost:3000).
 
 ### 2. Start the frontend
 
@@ -109,7 +109,7 @@ In a new terminal, from the `frontend` directory:
 npm run dev
 ```
 
-The frontend will run on [http://localhost:5173](http://localhost:5173).
+The frontend will run on [https://localhost:5173](https://localhost:5173).
 
 ---
 
@@ -136,7 +136,8 @@ npm test
 This app includes several security features and best practices:
 
 - **Sensitive Files**:  
-  The `.env` file (which stores your Twilio credentials and other secrets) and the SSL certificate files (`key.pem`, `cert.pem`) are highly sensitive.  
+  The `.env` file stores your Twilio credentials and other secrets to keep them out of the wrong hands.  
+  The SSL certificate files (`key.pem`, `cert.pem`) are also highly sensitive, as they secure communications between your frontend and backend.  
   These files give access to your accounts and secure communications, so they must be kept private and never shared or committed to your repository.  
   Always add them to your `.gitignore` file to prevent accidental exposure.
 
@@ -190,4 +191,15 @@ MIT
 - [Twilio Verify](https://www.twilio.com/docs/verify)
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
+- [Express.js](https://expressjs.com/)
+- [Node.js](https://nodejs.org/)
+- [validator.js](https://github.com/validatorjs/validator.js)
+- [express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
+- [Supertest](https://www.npmjs.com/package/supertest)
+- [Vitest](https://vitest.dev/)
 - [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar)
+
+## Presentation slides
+Tuni signup to office required.
+
+[Presentation]https://tuni-my.sharepoint.com/:p:/g/personal/roope_kallinen_tuni_fi/Eb-kezo_Fd9KraQXUu9DcSMBoUIIoqG8K2qwyntM8HgiuQ?e=PVm7zu
