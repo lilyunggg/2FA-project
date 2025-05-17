@@ -1,6 +1,8 @@
 # 2FA-project
 
-Two-factor authentication (2FA) adds an extra layer of security to user logins by requiring not only a password but also a second factor—typically a code sent to the user's phone. This project demonstrates a simple full-stack 2FA app using:
+This is a simple 2FA app that can be integrated into various types of login systems.
+
+Two-factor authentication (2FA) adds an extra layer of security to user logins by requiring not only a password but also a second factor—typically a code sent to the user's phone. 2FA can also be used for passwordless login, where the user authenticates using only a code sent to their device, eliminating the need for a traditional password. By requiring something the user knows (a password) or something they have (their phone), 2FA significantly reduces the risk of unauthorized access—even if a password is compromised, an attacker cannot log in without the second factor. This project demonstrates a simple full-stack 2FA app using:
 
 - **React** for the frontend user interface
 - **Express.js** for the backend server
@@ -12,8 +14,21 @@ The app guides users through entering their phone number, receiving a verificati
 ## Prerequisites
 - Twilio account with a Verify Service ([Twilio Console](https://www.twilio.com/console/verify/services))
 - OpenSSL (generating certificates for HTTPS)
-
 ---
+
+## Creating a Twilio Verify Service
+
+To use Twilio Verify for sending and checking SMS codes, you need to create a Verify Service in your Twilio Console:
+
+1. Log in or Sign up to your [Twilio Console](https://www.twilio.com/console/verify/services).
+2. Click **Create new Service**.
+3. Enter a friendly name (e.g., "2FA Demo") and choose **Verification** as the service type.
+4. Click **Create**.
+5. Copy the **Service SID** (it starts with `VA...`).  
+   You’ll need this for your `.env` file as `TWILIO_VERIFY_SERVICE_SID`.
+
+For more details, see [Twilio’s Verify Quickstart](https://www.twilio.com/docs/verify/api).
+
 
 ## Installing OpenSSL
 
