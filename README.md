@@ -1,4 +1,4 @@
-# 2FA-projekti
+# 2FA-project
 
 Two-factor authentication (2FA) adds an extra layer of security to user logins by requiring not only a password but also a second factor—typically a code sent to the user's phone. This project demonstrates a simple full-stack 2FA app using:
 
@@ -50,7 +50,7 @@ The app guides users through entering their phone number, receiving a verificati
 
 ```sh
 git clone <repo-url>
-cd 2FA-projekti
+cd 2FA-project
 ```
 
 ### 2. Install backend dependencies

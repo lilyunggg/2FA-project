@@ -1,5 +1,5 @@
 {
-  "name": "2fa-projekti",
+  "name": "2fa-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "type": "commonjs",
   "dependencies": {
+    "2fa-project": "file:",
     "2fa-projekti": "file:",
     "co": "^4.6.0",
     "cors": "^2.8.5",
